@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:task_ecommers/widget/custom_categori.dart';
+import 'package:task_ecommers/widget/serach%20bar.dart';
 
 import '../widget/categoris_model.dart';
 
@@ -37,44 +37,29 @@ class _HomeViweState extends State<HomeViwe> {
         price: "EGP 1700",
         image: "assets/image/a4cb63f336124bc440b84fe727065982.jpg",
         reviwe: '(4.4)'),
+    CategorisModel(
+        price: "EGP 1700",
+        image: "assets/image/a4cb63f336124bc440b84fe727065982.jpg",
+        reviwe: '(4.4)'),
+    CategorisModel(
+        price: "EGP 1700",
+        image: "assets/image/a4cb63f336124bc440b84fe727065982.jpg",
+        reviwe: '(4.4)'),
+    CategorisModel(
+        price: "EGP 1700",
+        image: "assets/image/a4cb63f336124bc440b84fe727065982.jpg",
+        reviwe: '(4.4)'),
+    CategorisModel(
+        price: "EGP 1700",
+        image: "assets/image/a4cb63f336124bc440b84fe727065982.jpg",
+        reviwe: '(4.4)'),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(children: [
-      Row(
-        children: [
-          Padding(
-            padding: EdgeInsets.only(top: 40, left: 10),
-            child: Container(
-              width: MediaQuery.of(context).size.width * 0.84,
-              height: MediaQuery.of(context).size.height * 0.1,
-              child: TextField(
-                style: TextStyle(color: Colors.black),
-                decoration: InputDecoration(
-                  prefixIcon: Icon(CupertinoIcons.search),
-                  hintText: "what do you search for ?",
-                  hintStyle: const TextStyle(color: Color(0xFF06004F)),
-                  enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(35),
-                      borderSide:
-                          const BorderSide(color: Color(0xFF004182), width: 1)),
-                ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 15, left: 6),
-            child: Container(
-              width: MediaQuery.of(context).size.width * 0.1,
-              height: MediaQuery.of(context).size.height * 0.1,
-              child: IconButton(
-                  onPressed: () {}, icon: Icon(CupertinoIcons.shopping_cart)),
-            ),
-          ),
-        ],
-      ),
+      SerachBar(),
       Expanded(
           child: GridView.builder(
               padding: EdgeInsets.all(5),
